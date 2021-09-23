@@ -1,0 +1,111 @@
+/* @font-face {
+    font-family: Charter;
+    src: url('/fonts/charter-regular.otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Charter;
+    src: url('/fonts/charter-italic.otf');
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Charter;
+    src: url('/fonts/charter-bold.otf');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Charter;
+    src: url('/fonts/charter-bold-italic.otf');
+    font-style: italic;
+    font-weight: bold;
+} */
+
+:root{
+    /* color: #212121ff;  */
+    --darkgray: #212429ff;
+    --deepgray: #212121ff;
+    --textgray: #424242;
+    --gray: #616161ff;
+}
+
+body{
+    /* color: rgba(0,0,0,1); */
+    /* color: hsla(hue, saturation, lightness, alpha); */
+    color: var(--textgray);
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    font-size: 14px;
+    color: var(--gray);
+}
+
+header a{
+    color: var(--colorlight);
+    text-decoration: none;
+}
+
+header a:hover{
+    cursor: pointer;
+    color: var(--colordark);
+}
+
+header nav details summary{
+    font-weight: bold;
+}
+
+header nav details summary:hover{
+    cursor: pointer;
+}
+
+h1{
+    font-size: 60px;
+    color: var(--deepgray);
+    /* font-size: 3.75em; */
+}
+
+h2{
+    font-size: 32px;
+    color: var(--deepgray);
+    /* font-size: 2em */
+}
+
+h3{
+    font-size: 24px;
+    /* font-size: 1.5em */
+}
+
+pre{
+    background-color: #fec62e;
+}
+
+.hero{
+    background-image: linear-gradient(to top, rgba(255,255,255,.3), transparent), url('/img/patron-1.png');
+    height: 350px;
+}
+
+.section-content{
+    counter-reset: titleList;
+}
+
+.section-content h3{
+    counter-increment: titleList;
+}
+
+.section-content h3::before{
+    content: counter(titleList)".";
+}
+
+.section-content h3::after{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--textgray);
+}
