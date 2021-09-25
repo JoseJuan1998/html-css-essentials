@@ -5,16 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Blog de Juan</title>
-    <link rel="stylesheet" href="/css/style-logical.css">
+    <link rel="stylesheet" href="./css/style-logical.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <div class="hero"></div>
     
     <div class="header">
-        <div class="header-wrapper">
+        <div class="wrapper">
             <div class="header-content">
                 <header>
                     <nav>
@@ -106,18 +126,17 @@
                         Setup
                     </h2>
                     
-                    <img src="/img/google_chrome.png" alt="Logo Google Chrome" title="Logo Google Chrome" id="google_chrome"/>
+                    <img src="./img/google_chrome_dark.png" alt="Logo Google Chrome" title="Logo Google Chrome" id="google_chrome"/>
                     <h3>
                         Google Chrome
                     </h3>
                     <p>
-                        
                         Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de 
                         desarrollo avanzadas y de amigable uso.
                         
                     </p>
                     
-                    <img src="/img/visual_studio_code.png" alt="Logo Visual Studio Code" title="Logo Visual Studio Code" id="visual_studio_code"/>
+                    <img src="./img/visual_studio_code_dark.png" alt="Logo Visual Studio Code" title="Logo Visual Studio Code" id="visual_studio_code"/>
                     <h3>
                         Visual Studio Code
                     </h3>
@@ -127,7 +146,7 @@
                         el que se desemvuelva.
                     </p>
                     
-                    <img src="/img/figma.png" alt="Logo Figma" title="Logo Figma" id="figma"/>
+                    <img src="./img/figma_dark.png" alt="Logo Figma" title="Logo Figma" id="figma"/>
                     <h3>
                         Figma
                     </h3>
@@ -136,7 +155,7 @@
                         por su fácil uso porque puede ser usado directamente desde el navegador.
                     </p>
                     
-                    <img src="/img/github.png" alt="Logo GitHub" title="Logo GitHub" id="github"/>
+                    <img src="./img/github_dark.png" alt="Logo GitHub" title="Logo GitHub" id="github"/>
                     <h3>
                         GitHub
                     </h3>
@@ -172,20 +191,20 @@
                         Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el significado y la estructura
                         del contenido.
                     </p>
-        <pre>
-        &lt;!DOCTYPE html&gt;
-        &lt;html lang=&quot;en&quot;&gt;
-        &lt;head&gt;
-        &lt;meta charset=&quot;UTF-8&quot;&gt;
-        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-        &lt;title&gt;Document&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-        
-        &lt;/body&gt;
-        &lt;/html&gt; 
-        </pre>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt; 
+</pre>
                 
                     <h3 id="etiquetas">
                         Etiquetas
@@ -206,7 +225,7 @@
                         El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si un árbol genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos esta anidación podemos identificar
                         dependencias, herencias en css y que tan complejo es nuestro proyecto.
                     </p>
-                    <img src="/img/dom.png" alt="Imagen que representa al DOM">
+                    <img src="./img/dom.png" id="dom" alt="Imagen que representa al DOM">
                 
                     <h3 id="semantica">
                         Semántica
@@ -231,7 +250,7 @@
                     <p>
                         Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML
                     </p>
-                    <img src="/img/image 5.png" alt="Imagen de CSS" title="Imagen de CSS">        
+                    <img src="./img/image 5.png" id="css" alt="Imagen de CSS" title="Imagen de CSS">        
                 </section>
         
                 <hr>
@@ -295,14 +314,47 @@
                         </li>
                     </ul>
                 </section>
+
+                <div class="section-content">
+                    <h3>Algunos videos muy interesantes</h3>
+                    <div class="slider">
+                        <scroll-container class="slider-container">
+                            <scroll-page class="slider-slide" id="img1">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/5f5Ig_U2Bpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </scroll-page>
+                            <scroll-page class="slider-slide" id="img2">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/DBN56zNnWd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </scroll-page>
+                        </scroll-container>
+                        <div class="slider-bullet-list">
+                            <a href="#img1"></a>
+                            <a href="#img2"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-content">
+                    <p>Si tienes alguna duda escribeme a <b><a href="mailto:me@leonidasesteban.com" target="_blank">me@leonidasesteban.com</a>.</b></p>
+                    <h3>Suscríbete a nuestro newsletter</h3>
+                    <form action="">
+                        <input type="text" placeholder="Nombre">
+                        <input type="email" placeholder="Correo electrónico">
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
 
     <footer class="footer">
-        <div class="wrapper">
+        <div class="footer-wrapper">
             <div class="footer-content">
-                <p>Si tienes alguna duda escribeme a <b><a href="mailto:me@leonidasesteban.com" target="_blank">me@leonidasesteban.com</a>.</b></p>
+                <h2>
+                    © Leonidas Esteban 2021
+                </h2>
+                <img src="./img/instagram.png" alt="Instagram">
+                <img src="./img/facebook.png" alt="Facebook">
+                <img src="./img/twitter.png" alt="Twitter">
             </div>
         </div>
     </footer>

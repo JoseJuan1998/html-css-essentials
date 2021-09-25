@@ -230,3 +230,6 @@ pre{
     margin: auto;
 }
 
+.footer-content{
+    margin-block-start: 64px;
+}
